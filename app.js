@@ -82,7 +82,7 @@ function checkAnswer () {
             document.querySelector('.correct')
             .innerHTML = `You answered : ${correctAnswers} qestions out of <strong> ${qAndA.length} </strong> right!`;
             document.querySelector('.reload')
-            .visibility = 'visible'
+            .style.visibility = 'visible'
         }
         console.log('right')
     } else if (currentQestion === qAndA.length -1) {
