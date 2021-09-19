@@ -31,8 +31,6 @@ const qAndA = [
     },
 ]
 
-console.log(qAndA[0].correct)
-
 let currentQestion = -1
 let correctAnswers = 0
 
@@ -95,7 +93,7 @@ function checkAnswer () {
         .innerHTML = `You answered : ${correctAnswers} qestions out of <strong> ${qAndA.length} </strong> right!`;
         document.querySelector('.reload')
         .style.opacity = 1
-        
-    }
+    } else if (answer.value === '') {
+        submit.className('disablet')
+    };
 }
-

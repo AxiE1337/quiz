@@ -49,6 +49,10 @@ body {
     background-color: turquoise;
 }
 
+.disablet {
+    pointer-events: none;
+}
+
 #answer {
     height: 30px;
     width: 100%;
@@ -60,7 +64,7 @@ body {
 
 #answer:focus {
     outline: 3px solid transparent;
-  }
+}
 
 .correct {
     position: relative;
