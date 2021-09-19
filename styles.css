@@ -84,7 +84,7 @@ body {
 }
 
 .reload {
-    opacity: 0;
+    visibility: hidden;
     color: rgba(255, 255, 255, 0.747);
     text-shadow: 2px 2px 2px #00000069;
     font-size: 2rem;

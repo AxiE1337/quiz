@@ -52,7 +52,7 @@ reload.addEventListener('click', () => {
     currentQestion = -1
     quizLoad ()
     document.querySelector('.reload')
-    .style.opacity = 0
+    .style.visibility = 'hidden'
 })
 
 function quizLoad () {
@@ -63,7 +63,7 @@ function quizLoad () {
 }
 function restart () {
     document.querySelector('.reload')
-    .style.opacity = 1
+    visibility = 'visible'
     document.querySelector('.correct')
     .innerHTML =''
     answer.style.visibility = 'visible'
@@ -82,7 +82,7 @@ function checkAnswer () {
             document.querySelector('.correct')
             .innerHTML = `You answered : ${correctAnswers} qestions out of <strong> ${qAndA.length} </strong> right!`;
             document.querySelector('.reload')
-            .style.opacity = 1
+            .visibility = 'visible'
         }
         console.log('right')
     } else if (currentQestion === qAndA.length -1) {
@@ -92,7 +92,7 @@ function checkAnswer () {
         document.querySelector('.correct')
         .innerHTML = `You answered : ${correctAnswers} qestions out of <strong> ${qAndA.length} </strong> right!`;
         document.querySelector('.reload')
-        .style.opacity = 1
+        .style.visibility = 'visible'
     } else if (answer.value === '') {
         submit.className('disablet')
     };
